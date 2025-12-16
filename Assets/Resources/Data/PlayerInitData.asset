@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77dabaa1529da479aa9c99e464c603, type: 3}
+  m_Name: PlayerInitData
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInitData
+  playerPrefab: {fileID: 6839860381152652315, guid: 0f5a23db4a040174cb29dedc56b3104b, type: 3}
+  defaultSpeed: 2
