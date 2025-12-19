@@ -40,14 +40,18 @@ public class Loader : MonoBehaviour
 
         _systems
             .Add(new GameInitSystem(_sharedData))
+
             .Add(new PlayerInputSystem())
             .Add(new GridMovementSystem()) 
+
             .Add(new PedestrianSpawnSystem()) 
             .Add(new CameraTrackSystem(_sharedData))
             .Add(new PositionSyncSystem())
             .Add(new PedestrianMovementSystem())
+
             .Add(new PlayerDeathSystem(_deathSettings))
             .Add(new DeathProcessingSystem())
+
             .Add(new BossEncounterStartSystem(_sharedData))
             .Add(new BattlePointTriggerSystem())
             .Add(new RhythmBeatControlSystem(_sharedData))
@@ -56,11 +60,10 @@ public class Loader : MonoBehaviour
             .Add(new PlayerAttackSystem())
             .Add(new RhythmResultToUISystem())
             .Add(new EnemyAttackSystem())
+
             .Add(new ChestSpawnSystem())
             .Add(new ChestTriggerSystem())
-            //.Add(new PuzzleInitSystem())
-            //.Add(new PuzzleUISyncSystem())
-            //.Add(new PuzzleResolutionSystem())
+
             .Add(new UISyncSystem(_sharedData))
             .Inject(_sharedData)
             .Inject(_deathSettings)

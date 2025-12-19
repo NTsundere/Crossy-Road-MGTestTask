@@ -71,8 +71,8 @@ namespace ChestPuzzle.Presenters
         {
             if (success)
             {
+                _view.Hide();
                 _view.ShowWinScreen();
-                _view.
 
                 UniTask.Delay(2000).ContinueWith(() =>
                 {

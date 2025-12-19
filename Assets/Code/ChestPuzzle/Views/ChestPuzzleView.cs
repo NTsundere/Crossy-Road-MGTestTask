@@ -62,17 +62,6 @@ namespace ChestPuzzle.Views
 
             if (_closeButton != null)
                 _closeButton.onClick.AddListener(HandleCloseClick);
-
-            ValidateReferences();
-        }
-
-        private void ValidateReferences()
-        {
-            if (_puzzlePanel == null) Debug.LogError("PuzzlePanel не назначен!");
-            if (_lockImage == null) Debug.LogError("LockImage не назначен!");
-            if (_keysCounterText == null) Debug.LogError("KeysCounterText не назначен!");
-            if (_keysGrid == null) Debug.LogError("KeysGrid не назначен!");
-            if (_keyPrefab == null) Debug.LogError("KeyPrefab не назначен!");
         }
 
         #endregion
